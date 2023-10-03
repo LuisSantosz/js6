@@ -51,25 +51,4 @@ for(let i = 1; i < numero; i++){
 
  }
 
- // Função para calcular e exibir o valor do empréstimo e das parcelas
-function calcularEmprestimo() {
-  
  
-    // Obtenha o valor do empréstimo do input com id "valorEmprestimo"
-      var valorEmprestimo = parseFloat(document.getElementById("valorEmprestimo").value);
-    
-      // Obtenha o valor das parcelas do input com id "valorParcelas"
-      var valorParcelas = parseFloat(document.getElementById("valorParcelas").value);
-    
-      // Verifique se os valores são válidos
-      if (isNaN(valorEmprestimo) || isNaN(valorParcelas)) {
-        console.log("Por favor, insira valores numéricos válidos.");
-      } else {
-        // Calcule e exiba o valor do empréstimo e das parcelas
-        console.log("Valor do Empréstimo: R$ " + valorEmprestimo.toFixed(2));
-        console.log("Valor das Parcelas: R$ " + valorParcelas.toFixed(2));
-      }
-    }
-    
-    // Chame a função quando um botão com id "calcular" for clicado
-    document.getElementById("calcular").addEventListener("click", calcularEmprestimo);
