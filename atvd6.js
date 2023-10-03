@@ -15,9 +15,23 @@ let valor = parseInt(prompt ("Inserir um valor: "))
 while(valor != "sair"){
 
 
-    for(let i = 1; i<=10; i++){
+    for(let i = 0; i<=10; i++){
         let resultado = valor *i
-        console.log(valor + "X" + i + "=" + resultado)
+        console.log(valor + "x" + i + "=" + resultado)
+    }
+
+    for(let i = 0; i<=10; i++){
+        let resultado = valor +i
+        console.log(valor + "+" + i + "=" + resultado)
+    }
+
+    for(let i = 0; i<=10; i++){
+        let resultado = valor -i
+        console.log(valor + "-" + i + "=" + resultado)
+    }
+    for(let i = 0; i<=10; i++){
+        let resultado = valor /i
+        console.log(valor + "/" + i + "=" + resultado)
     }
 
 valor = prompt("Inserir um valor")
