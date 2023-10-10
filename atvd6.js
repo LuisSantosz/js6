@@ -33,6 +33,4 @@ while(valor != "sair"){
         let resultado = valor /i
         console.log(valor + "/" + i + "=" + resultado)
     }
-
-valor = prompt("Inserir um valor")
 }
